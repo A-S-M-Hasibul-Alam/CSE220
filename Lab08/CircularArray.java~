@@ -1,0 +1,15 @@
+public class CircularArray extends Queue{
+  private int size;
+  private int start;
+  private Object c[];
+  
+  CircularArray(){
+    size =0;
+    start = 0; 
+    c = new Object[10];
+  }
+  size(){
+    return size;
+  }
+}
+    

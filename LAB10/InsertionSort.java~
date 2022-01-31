@@ -1,0 +1,22 @@
+public class InsertionSort{
+  public static void InsertionSort(int[]a, int index){
+    if(index >= a.length){
+    }
+    else{
+      int backup = a[index];
+      int j = recursive(int a[],int backup,int index-1);
+      a[j+1] = backup;
+      InsertionSort(a, j);
+    }
+    public static int recursive(int a[], int backup, int index){
+      if(index>=0 && a[index]>backup){
+        a[index+1] = index;
+        index = recursicve(a, backup, index-1);
+        return index;
+      }
+      else{
+        return index;
+      }
+    }
+  }
+}

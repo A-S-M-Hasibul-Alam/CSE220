@@ -1,0 +1,22 @@
+public class Recursion{
+public int factorial(int x){
+  if(x>1){
+    return x*factorial(x-1);
+  }
+  else{
+    return 1;
+  }
+}
+public int fibonacci(int i){
+  if(i>2){
+    return fibonacci(i-1)+fibonacci(i-2);
+  }
+  else if(i==2){
+    return 1;
+  }
+  else{
+    return 0;
+  }
+}
+
+}

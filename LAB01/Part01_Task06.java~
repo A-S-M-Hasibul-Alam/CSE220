@@ -1,0 +1,23 @@
+import java.util.*;
+public class Part01_Task06{
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    String s = sc.nextLine();
+    int a[] = new int[s.length];
+    for(int i=0; i<s.length; i++){
+      a[i] = s.CharAt(i);
+    }
+    boolean isPal = true;
+    for(int i=0, j=a.length-1; i<a.length; i++;j--){
+      if(a[i] !=a[j]){
+        isPal = false;
+      }
+    }
+    if(isPal = true){
+      System.out.println("Palindrome");
+    }
+    else{
+      System.out.println("Not Palindrome");
+    }
+  }
+}
